@@ -189,37 +189,102 @@
         </div>
     </section>
 
-    <!-- PORTFOLIO SECTION (PROJETOS EM DESTAQUE + GITHUB) -->
+<!-- PORTFOLIO SECTION (PROJETOS EM DESTAQUE + GITHUB) -->
     <section id="projetos" class="portfolio-section">
         <div class="container">
             <h2 class="section-title">Meus Projetos</h2>
-            <p class="section-subtitle">Aplicações em desenvolvimento e repositórios de código</p>
+            <p class="section-subtitle">Aplicações em desenvolvimento, laboratórios técnicos e repositórios de código</p>
             
-            <!-- SUBSEÇÃO 1: PROJETOS ATUAIS E EM ANDAMENTO -->
+            <!-- SUBSEÇÃO 1: PROJETOS EM DESTAQUE -->
             <h3 style="color: #fff; font-size: 20px; margin-bottom: 24px; font-weight: 700; display: flex; align-items: center; gap: 10px;">
-                <i class="fas fa-hammer" style="color: #e50914; font-size: 18px;"></i> Projetos Atuais & Concluídos
+                <i class="fas fa-code-branch" style="color: #e50914; font-size: 18px;"></i> Projetos e Laboratórios Técnicos
             </h3>
             
             <div class="portfolio-grid" style="margin-bottom: 60px;">
-                <!-- Projeto Atual 1: Bootcamp I -->
+                
+                <!-- Projeto 1: C# Fundamentals Lab -->
                 <div class="project-card" style="border-top: 3px solid #e50914;">
                     <div class="project-image-placeholder">
-                        <i class="fas fa-laptop-code project-img-icon" style="opacity: 1; color: #e50914;"></i>
+                        <i class="fas fa-cube project-img-icon" style="opacity: 1; color: #e50914;"></i>
                     </div>
                     <div class="project-info">
-                        <h3>Bootcamp I</h3>
-                        <p>Desenvolvimento intensivo focado em algoritmos práticos, desafios de lógica de programação e arquitetura de sistemas iniciais.</p>
+                        <h3>C# Fundamentals Lab</h3>
+                        <p>Laboratório prático de algoritmos, coleções, consultas LINQ e princípios de Programação Orientada a Objetos (POO) em C# (.NET 10).</p>
                         <div class="badges">
-                            <span>JavaScript</span>
-                            <span>Lógica</span>
-                            <span>Em Andamento</span>
+                            <span>C#</span>
+                            <span>.NET 10</span>
+                            <span>POO</span>
+                            <span>LINQ</span>
                         </div>
-                        <div class="project-card-footer">
-                            <span style="color: #cca3a6; font-size: 12px; font-weight: 600;"><i class="fas fa-sync fa-spin" style="margin-right: 5px;"></i> Atualizando</span>
+                        <div class="project-card-footer" style="margin-top: 15px;">
+                            <a href="https://github.com/JeiJota/csharp-fundamentals-lab" target="_blank" class="btn-primary" style="padding: 8px 12px; font-size: 13px; text-decoration: none; display: inline-block;">
+                                <i class="fab fa-github"></i> Ver Repositório
+                            </a>
                         </div>
                     </div>
                 </div>
 
+                <!-- Projeto 2: Python Algorithms Playground -->
+                <div class="project-card" style="border-top: 3px solid #e50914;">
+                    <div class="project-image-placeholder">
+                        <i class="fab fa-python project-img-icon" style="opacity: 1; color: #e50914;"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>Python Algorithms Playground</h3>
+                        <p>Laboratório de algoritmos, manipulação de estruturas de dados (listas e dicionários) e automação de relatórios em CSV com Python 3.</p>
+                        <div class="badges">
+                            <span>Python 3</span>
+                            <span>Data Handling</span>
+                            <span>CSV Automation</span>
+                        </div>
+                        <div class="project-card-footer" style="margin-top: 15px;">
+                            <a href="https://github.com/JeiJota/python-algorithms-playground" target="_blank" class="btn-primary" style="padding: 8px 12px; font-size: 13px; text-decoration: none; display: inline-block;">
+                                <i class="fab fa-github"></i> Ver Repositório
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 3: PortfólioHUB -->
+                <div class="project-card">
+                    <div class="project-image-placeholder">
+                        <i class="fas fa-network-wired project-img-icon" style="opacity: 0.8;"></i>
+                    </div>
+                    <div class="project-info">
+                        <h3>PortfólioHUB</h3>
+                        <p>Centralizador de projetos e histórico profissional, unindo design responsivo com consumo de APIs assíncronas do GitHub em tempo real.</p>
+                        <div class="badges">
+                            <span>HTML5/CSS3</span>
+                            <span>JavaScript</span>
+                            <span>API REST</span>
+                        </div>
+                        <div class="project-card-footer" style="margin-top: 15px;">
+                            <a href="https://github.com/JeiJota/Reposit-rio-sub" target="_blank" class="btn-primary" style="padding: 8px 12px; font-size: 13px; text-decoration: none; display: inline-block;">
+                                <i class="fab fa-github"></i> Ver Código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- SUBSEÇÃO 2: REPOSITÓRIOS GERAIS DO GITHUB (CARREGAMENTO DINÂMICO) -->
+            <hr style="border: 0; height: 1px; background: linear-gradient(90deg, transparent, #3a0d11, transparent); margin-bottom: 40px;">
+            
+            <h3 style="color: #fff; font-size: 20px; margin-bottom: 24px; font-weight: 700; display: flex; align-items: center; gap: 10px;">
+                <i class="fab fa-github" style="color: #b3b3b3; font-size: 18px;"></i> Outros Repositórios no GitHub
+            </h3>
+            
+            <!-- Lista dinâmica controlada pelo script.js -->
+            <div class="portfolio-grid" id="github-repos-list">
+                <div class="project-card" style="grid-column: 1/-1; text-align: center; padding: 40px; color: #b3b3b3;">
+                    <i class="fas fa-spinner fa-spin" style="font-size: 32px; color: #e50914; margin-bottom: 15px;"></i>
+                    <p>Sincronizando com os repositórios do GitHub...</p>
+                </div>
+            </div>
+            
+        </div> 
+    </section>
                 <!-- Projeto Atual 2: PortfólioHUB -->
                 <div class="project-card" style="border-top: 3px solid #e50914;">
                     <div class="project-image-placeholder">
